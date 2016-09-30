@@ -1,5 +1,8 @@
 #this code is to download lyrics using artist & song name
 
+# "suds" installer command
+#pip install suds-jurko
+
 from suds.client import Client
 url = 'http://api.chartlyrics.com/apiv1.asmx?WSDL'
 client = Client(url)
