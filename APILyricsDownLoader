@@ -1,0 +1,8 @@
+#this code is to download lyrics using artist & song name
+
+from suds.client import Client
+url = 'http://api.chartlyrics.com/apiv1.asmx?WSDL'
+client = Client(url)
+
+s1 = client.service.SearchLyricDirect("Nick Drake","One of These Things First")
+print str(s1.Lyric)
